@@ -28,6 +28,15 @@ public abstract class LaskevaKomento implements Komento{
 		tuloskentta.setText(""+laske());
 	}
 	
+	@Override
+	public void peru() {
+		syotekentta.setText("");
+		tuloskentta.setText(""+kumoa());
+	}
+	
+	// Palauttaa tuloksen kumoamisen jälkeen
+	public abstract int kumoa();
+	
 	public abstract int laske();
 	
 }

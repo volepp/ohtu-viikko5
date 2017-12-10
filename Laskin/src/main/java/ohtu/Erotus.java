@@ -14,9 +14,9 @@ public class Erotus extends LaskevaKomento{
 		return super.sovelluslogiikka.tulos();
 	}
 
-	@Override
-	public void peru() {
-		
+	public int kumoa() {
+		sovelluslogiikka.plus(arvo);
+		return sovelluslogiikka.tulos();
 	}
 
 }

@@ -14,9 +14,9 @@ public class Summa extends LaskevaKomento{
 		return super.sovelluslogiikka.tulos();
 	}
 
-	@Override
-	public void peru() {
-		
+	public int kumoa() {
+		sovelluslogiikka.miinus(arvo);
+		return sovelluslogiikka.tulos();
 	}
 	
 }
